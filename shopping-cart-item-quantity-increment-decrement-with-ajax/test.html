@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <figure class="card card-product">
+        <span class="badge-new"> NEW </span>
+        <div class="img-wrap"> <img src="assets/images/items/4.jpg">
+        <a class="btn-overlay" href="#"><i class="fa fa-search-plus"></i> Quick view</a>
+        </div>
+        <figcaption class="info-wrap">
+          <a href="#" class="title">The name of product</a>
+          <div class="action-wrap">
+            <a href="#"id="add" class="btn btn-primary btn-sm float-right"> <i class="fa fa-cart-plus"></i> Add </a>
+            <div class="price-wrap h5">
+              <span>$</span><span class="price-new">280</span>
+            </div> <!-- price-wrap.// -->
+          </div> <!-- action-wrap -->
+        </figcaption>
+      </figure> <!-- card // -->
+      <script src="jquery-3.2.1.min.js"></script>
+      <script>
+        $('#add').on('click',function(){
+           $value= $(this).parent().parent().children('.price-new').text();
+           alert($value)
+        })
+      </script>
+   
+</body>
+</html>
